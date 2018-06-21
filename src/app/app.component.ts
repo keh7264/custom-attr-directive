@@ -16,11 +16,25 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
   <h2 *myNgIf="condition">Hello {{name}}</h2>
   <button (click)="condition=!condition">Click</button>
+
+  <br/><br/>
+  <ng-container *ngIf="isShow">
+    <ng-container *ngFor="let item of items">
+      <span>{{item}}</span>
+    </ng-container>
+  </ng-container>
+  <button (click)="isShow=!isShow">
+    {{isShow?'hide':'show'}}
+  </button>
   `,
   styles: []
 })
 export class AppComponent {
   color: string;
+
   condition = false;
   name = 'Lee';
+
+  isShow = true;
+  items = [1, 2, 3];
 }
