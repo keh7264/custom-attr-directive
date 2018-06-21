@@ -13,9 +13,14 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
   </div>
 
   <p [textColor]="color" defaultColor="violet">Text Color</p>
+
+  <h2 *myNgIf="condition">Hello {{name}}</h2>
+  <button (click)="condition=!condition">Click</button>
   `,
   styles: []
 })
 export class AppComponent {
   color: string;
+  condition = false;
+  name = 'Lee';
 }
