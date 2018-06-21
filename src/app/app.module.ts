@@ -6,6 +6,8 @@ import { TextBlueDirective } from './text-blue.directive';
 import { TextColorDirective } from './text-color.directive';
 import { MyDirectiveDirective } from './my-directive.directive';
 import { MyNgIfDirective } from './my-ng-if.directive';
+import { RangeDirective } from './range.directive';
+import { RangeComponent } from './range/range.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { MyNgIfDirective } from './my-ng-if.directive';
     TextBlueDirective,
     TextColorDirective,
     MyDirectiveDirective,
-    MyNgIfDirective
+    MyNgIfDirective,
+    RangeDirective,
+    RangeComponent
   ],
   imports: [
     BrowserModule

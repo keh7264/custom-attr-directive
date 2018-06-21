@@ -26,6 +26,8 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
   <button (click)="isShow=!isShow">
     {{isShow?'hide':'show'}}
   </button>
+
+  <app-range></app-range>
   `,
   styles: []
 })
